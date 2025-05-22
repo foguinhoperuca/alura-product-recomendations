@@ -19,6 +19,7 @@ def create_user(name: str) -> User:
     Returns:
         User: User = The object created with an ID from DB.
     """
+    print(f'{name=}')
     global user_counter
     new_user: User = User(id=user_counter, name=name)
     users.append(new_user)

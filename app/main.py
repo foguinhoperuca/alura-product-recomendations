@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from app.routers import routers_products, routers_users
 
 
-MENSAGE_HOME: str = "Welcome to API of Product's Recomendatinos"
+MESSAGE_HOME: str = "Welcome to API of Product's Recomendatinos"
 app = FastAPI()
 app.include_router(routers_products.router)
 app.include_router(routers_users.router)
